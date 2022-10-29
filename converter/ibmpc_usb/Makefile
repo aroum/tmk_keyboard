@@ -60,7 +60,7 @@ OPT_DEFS += -DSUSPEND_MODE_STANDBY
 #   Teensy halfKay   512
 #   Teensy++ halfKay 1024
 #   Atmel DFU loader 4096
-#   LUFA bootloader  4096
+#   LUFA bootloadFer  4096
 #   USBaspLoader     2048
 # Bootloader size can be calculated from fuse bits
 #BOOTLOADER_SIZE ?= 4096
@@ -71,18 +71,18 @@ OPT_DEFS += -DSUSPEND_MODE_STANDBY
 #   comment out to disable the options.
 #
 BOOTMAGIC_ENABLE ?= no	# Virtual DIP switch configuration(+1150)
-MOUSEKEY_ENABLE ?= yes	# Mouse keys(+2200)
+MOUSEKEY_ENABLE ?= no	# Mouse keys(+2200)
 EXTRAKEY_ENABLE ?= yes	# Audio control and System control(+400)
-CONSOLE_ENABLE ?= yes	# Console for debug(+4150)
-COMMAND_ENABLE ?= yes	# Commands for debug and configuration(+3600)
+CONSOLE_ENABLE ?= no	# Console for debug(+4150)
+COMMAND_ENABLE ?= no	# Commands for debug and configuration(+3600)
 NKRO_ENABLE ?= yes	# USB Nkey Rollover(+350)
 
 KEYMAP_SECTION_ENABLE ?= yes
 UNIMAP_ENABLE ?= yes
 
 # IBMPC Options
-IBMPC_SECONDARY ?= yes		# enable secondary interface(+800)
-IBMPC_MOUSE_ENABLE ?= yes	# enable mouse support(+2000)
+IBMPC_SECONDARY ?= no		# enable secondary interface(+800)
+IBMPC_MOUSE_ENABLE ?= no	# enable mouse support(+2000)
 
 
 # Optimize size but this may cause error "relocation truncated to fit"
